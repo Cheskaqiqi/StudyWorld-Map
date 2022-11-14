@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studyworld Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="sidebar">
+      <!-- <img src="logo.png" alt="Logo" class="logo" /> -->
+      <h1>TO DO LIST</h1>
+      <ul class="workouts">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">Type</label>
+            <select class="form__input form__input--type">
+              <option value="running">Study</option>
+              <option value="cycling">Play</option>
+              <!-- ////////// -->
+              <!-- <option value="shopping">Shopping</option> -->
+              <!-- <option value="workout">Workout</option> -->
+
+              <!-- ////////// -->
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label">Task</label>
+            <input
+              class="form__input form__input--distance"
+              placeholder="task"
+            />
+          </div>
+
+          <div class="form__row">
+            <label class="form__label">Time</label>
+            <input
+              class="form__input form__input--duration"
+              placeholder="min"
+            />
+          </div>
+
+          <!-- <div class="form__row">
+            <label class="form__label">Cadence</label>
+            <input
+              class="form__input form__input--cadence"
+              placeholder="step/min"
+            />
+          </div>
+          <div class="form__row form__row--hidden">
+            <label class="form__label">Elev Gain</label>
+            <input
+              class="form__input form__input--elevation"
+              placeholder="meters"
+            />
+          </div> -->
+          <button class="form__btn">OK</button>
+        </form>
+      </ul>
+    </div>
+
+    <!-- <h1>start to study</h1> -->
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGJjezXxlgStj_JPg7wzu7ds5f4JvVaIc&map_ids=a0997b219b3d6d73&callback=initMap"></script>
+  </body>
+</html>
